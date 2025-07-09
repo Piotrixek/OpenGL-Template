@@ -35,6 +35,7 @@ file(GLOB_RECURSE SOURCES "src/*.cpp")
 add_executable(main ${SOURCES})
 target_include_directories(main PUBLIC
     src 
+    ${LIBS_DIR}/OpenGL/glm
     ${LIBS_DIR}/OpenGL/glad/include
     ${LIBS_DIR}/OpenGL/glfw/include
     ${LIBS_DIR}/OpenGL
